@@ -1,0 +1,36 @@
+
+
+li {
+    list-style: none;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.links__holder {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    margin-right: 24px;
+   
+    
+}
+
+.link:hover {
+    border-bottom: solid 2px;
+    border-color: black;
+    cursor: pointer;
+}
+
+
+
