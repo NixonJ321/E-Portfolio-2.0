@@ -15,7 +15,23 @@ a {
   text-decoration: none;
 }
 
-/* NAV */
+section {
+  background-color: rgb(245, 245, 245);
+}
+
+.click:hover {
+  transform: scale(1.1);
+}
+
+.click:focus {
+  transform: scale(0.9);
+}
+
+/* 
+
+NAV 
+
+*/
 
 nav {
   max-width: 1200px;
@@ -45,4 +61,74 @@ nav {
 
 .fa-circle-half-stroke {
   font-size: 20px;
+}
+
+/* 
+
+LANDING PAGE 
+
+*/
+
+#landing-page {
+  min-height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.header__title--secondary {
+  font-size: 120px;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1;
+  color: #ca2b2b;
+}
+
+.header__title {
+  font-size: 120px;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1;
+}
+
+.header__para {
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 430px;
+  line-height: 1.5;
+}
+
+.social__list {
+  margin: 16px;
+  display: flex;
+}
+
+.header__link {
+  margin: 0px 8px;
+  background-color: #ca2b2b;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.header__link--1 {
+  padding: 8px 9px;
+}
+
+.header__link--2 {
+  padding: 8px;
+}
+
+.header__link--3 {
+  padding: 8px 10px;
 }
