@@ -27,6 +27,14 @@ section {
   transform: scale(0.9);
 }
 
+.click {
+  transition: all 300ms ease;
+}
+
+button {
+  cursor: pointer;
+}
+
 /* 
 
 NAV 
@@ -52,6 +60,7 @@ nav {
 
 .nav__link {
   margin: 0px 12px;
+  
 }
 
 .nav__link--anchor {
@@ -73,7 +82,7 @@ LANDING PAGE
   min-height: 100vh;
 }
 
-.header {
+header {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -118,7 +127,7 @@ LANDING PAGE
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 300ms ease;
+  
 }
 
 .header__link--1 {
@@ -131,4 +140,52 @@ LANDING PAGE
 
 .header__link--3 {
   padding: 8px 10px;
+}
+
+
+.mail__btn {
+  position: absolute;
+  bottom: 32;
+  right: 40;
+  font-size: 36px;
+  padding: 16px;
+  border-radius: 50px;
+  filter: invert();
+  border: none;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 24px;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll__icon {
+  width: 20px;
+  height: 30px;
+  border:2px solid  #242424 ;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll__icon:after {
+  content: "";
+  width: 4px;
+  height: 6px;
+  background-color: #242424;
+  border-radius: 10px;
+  animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(-3px);
+  }
 }
