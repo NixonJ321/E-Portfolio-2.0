@@ -19,6 +19,23 @@ section {
   background-color: rgb(245, 245, 245);
 }
 
+input,
+textarea {
+  width: 100%;
+  background-color: #242424;
+  color: white;
+  outline: none;
+  border: 1px solid #c0c4cc;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 40px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
 .click:hover {
   transform: scale(1.1);
 }
@@ -247,6 +264,8 @@ MODAL
 
 .modal__half {
   width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .modal__about {
@@ -262,7 +281,6 @@ MODAL
 }
 
 .modal__about--title {
-  margin-top: 120px;
   font-weight: 700;
 }
 
@@ -279,11 +297,18 @@ MODAL
   margin-top: 48px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .language__wrapper {
-  width: 25%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.modal__language {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,33 +318,70 @@ MODAL
 .language {
   width: 100%;
   transition: all 300ms;
+}
 
-
+.language__wrapper:hover .language__name {
+  transform: scale(1);
 }
 
 .language__name {
   position: absolute;
   bottom: -30px;
-  padding-top: 16px;
   font-weight: 700;
+  text-wrap: nowrap;
   transform: scale(0);
+  transition: all 200ms;
 }
 
-
-
-.language:hover .language__name{
+.language:hover .language__name {
   transform: scale(1);
 }
 
 .language:hover {
-  scale: .9;
-  filter: brightness(.8);
+  scale: 0.9;
+  filter: brightness(0.8);
 }
 
 .modal__contact {
   background-color: #242424;
   color: white;
 }
+
+.modal__contact--wrapper {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.form__item {
+  margin-top: 24px;
+}
+
+.form__button {
+  max-width: 240px;
+  width: 100%;
+  margin-top: 48px;
+  padding: 12px 24px;
+  background-color: #ca2b2b;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid #ca2b2b;
+  border-radius: 2px;
+  transition: all 300ms;
+}
+
+.form__button:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
+.form__button:active {
+  transform: translateY(3px);
+  color: #ca2b2b;
+  border-color: #ca2b2b;
+}
+
 /* 
 
 PROJECTS
